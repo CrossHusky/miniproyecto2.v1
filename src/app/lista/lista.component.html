@@ -1,0 +1,16 @@
+
+<div class="jumbotron">
+    <h1 class="display-4" style="text-align: center;">Lista de personas registradas:</h1>
+    <p></p>
+
+    <p class="lead"></p>
+    <hr class="my-4">
+    <p></p>
+
+    <div *ngFor="let registro of registro">
+
+        {{registro.nombre}} - {{registro.sexo}} - {{registro.correo}} - {{registro.cumpleanios}}
+
+    </div>
+
+</div>

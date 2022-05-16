@@ -1,0 +1,20 @@
+<!--<div class="container">
+  <div class="row animated fadeIn fast" *ngIf="indice == -1">
+    <div class="co-md-12">
+      <div class="alert alert-info" role="alert">
+        No existen resultados de {{ nombreh }}
+        {{ goBack() }}
+      </div>
+    </div>
+  </div>
+</div>-->
+<div class="container"><div class="jumbotron jumbotron-fluid" *ngIf="indice == -1">
+    <div class="container">
+      <h1 class="display-4">Oops!</h1>
+      <h2 class="lead">El héroe {{ nombreh }} que  buscas no existe :(</h2>
+      {{ goBack() }}
+    </div>
+  </div></div>
+
+
+<app-unheroe *ngIf="indice != -1" [heroe]="miheroe"></app-unheroe>
